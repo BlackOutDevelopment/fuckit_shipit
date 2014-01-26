@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".BlackoutAppActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+	<LinearLayout 
+	    android:id="@+id/blackout_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_gravity="center"
+	    android:keepScreenOn="true"
+	    android:orientation="vertical">
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"/>
+	    <TextView
+	        android:id="@+id/get_drunk_string"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="6"
+	        android:keepScreenOn="true"
+	        android:text="@string/summary_str"
+	        android:textColor="#33b5e5"
+	        android:textSize="50sp"
+	        android:textStyle="bold" 
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"/>
+	    <Button 
+	        android:id="@+id/get_drunk_button"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="2"
+	        android:text="@string/get_drunk_button"
+	        android:onClick="get_drunk" 
+	        android:layout_marginBottom="?android:attr/actionBarSize"/>
+	    
+	</LinearLayout>
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <FrameLayout
+        android:id="@+id/last_night"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            style="?buttonBarStyle"
+            android:id="@+id/last_night_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+            <Button
+                android:id="@+id/last_night_button"
+                style="?buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/last_night_review" 
+                android:onClick="last_night_review"/>
+                
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

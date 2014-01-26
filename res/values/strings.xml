@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blackout App</string>
+    <string name="summary_str">Click this button when you start drinking!</string>
+    <string name="get_drunk_button">Get Drunk.</string>
+    <string name="last_night_review">What happened last night?</string>
+    <string name="title_activity_get_drunk">GetDrunkActivity</string>
+    <string name="done_drinking">Done already?</string>
+    <string name="welcome_message">Grab a beer and get started. We\'ll be in touch.</string>
+    <string name="title_thing_list">Things</string>
+    <string name="title_thing_detail">Thing Detail</string>
+    <string name="title_activity_list">Activities</string>
+    <string name="title_activity_detail">Activity Detail</string>
+    <string name="title_activity_test_blackout">Test_blackout</string>
+    <string name="action_settings">Settings</string>
+    <string name="blackout_test">Hello world!</string>
+
+</resources>
