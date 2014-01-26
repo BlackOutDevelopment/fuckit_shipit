@@ -66,7 +66,7 @@ public class GetDrunkActivity extends Activity {
 			}
 		});
     	hideSystemUI();
-    	Intent intent = new Intent(this, Test_blackout.class);
+    	//Pending? Intent intent = new Intent(this, Test_blackout.class);
     	
     	
     }

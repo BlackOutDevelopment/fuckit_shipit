@@ -36,12 +36,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class id {
         public static final int action_settings=0x7f09000f;
-        public static final int activity_detail=0x7f09000c;
+        public static final int activity_detail=0x7f09000e;
         public static final int activity_detail_container=0x7f090000;
         public static final int activity_list=0x7f090001;
-        public static final int article=0x7f09000b;
+        public static final int article=0x7f09000d;
         public static final int blackout_content=0x7f090002;
-        public static final int blackout_test=0x7f09000e;
+        public static final int blackout_test=0x7f09000c;
         public static final int done_drinking=0x7f09000a;
         public static final int get_drunk_button=0x7f090004;
         public static final int get_drunk_content=0x7f090008;
@@ -50,7 +50,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int last_night=0x7f090005;
         public static final int last_night_button=0x7f090007;
         public static final int last_night_controls=0x7f090006;
-        public static final int test_blackout=0x7f09000d;
+        public static final int test_blackout=0x7f09000b;
     }
     public static final class layout {
         public static final int activity_activity_detail=0x7f030000;
@@ -73,9 +73,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_activity_twopane=0x7f030002;
         public static final int activity_blackout_app=0x7f030003;
         public static final int activity_get_drunk=0x7f030004;
-        public static final int article_view=0x7f030005;
-        public static final int fragment_activity_detail=0x7f030006;
-        public static final int fragment_test_blackout=0x7f030007;
+        public static final int activity_test_blackout=0x7f030005;
+        public static final int article_view=0x7f030006;
+        public static final int fragment_activity_detail=0x7f030007;
     }
     public static final class menu {
         public static final int test_blackout=0x7f080000;
