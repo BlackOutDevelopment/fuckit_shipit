@@ -35,66 +35,78 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000f;
-        public static final int activity_detail=0x7f09000e;
-        public static final int activity_detail_container=0x7f090000;
-        public static final int activity_list=0x7f090001;
-        public static final int article=0x7f09000d;
-        public static final int blackout_content=0x7f090002;
-        public static final int blackout_test=0x7f09000c;
-        public static final int done_drinking=0x7f09000a;
-        public static final int get_drunk_button=0x7f090004;
-        public static final int get_drunk_content=0x7f090008;
-        public static final int get_drunk_controls=0x7f090009;
-        public static final int get_drunk_string=0x7f090003;
-        public static final int last_night=0x7f090005;
-        public static final int last_night_button=0x7f090007;
-        public static final int last_night_controls=0x7f090006;
-        public static final int test_blackout=0x7f09000b;
+        public static final int action_settings=0x7f090013;
+        public static final int activity_detail=0x7f090011;
+        public static final int blackout_content=0x7f090006;
+        public static final int blackout_test=0x7f09000f;
+        public static final int container=0x7f090010;
+        public static final int done_drinking=0x7f09000d;
+        public static final int dummy_1=0x7f090005;
+        public static final int edit_text=0x7f090003;
+        public static final int fullscreen_content=0x7f090002;
+        public static final int fullscreen_content_controls=0x7f090004;
+        public static final int get_drunk_button=0x7f090008;
+        public static final int get_drunk_content=0x7f090000;
+        public static final int get_drunk_controls=0x7f09000c;
+        public static final int get_drunk_string=0x7f090007;
+        public static final int last_night=0x7f090009;
+        public static final int last_night_button=0x7f09000b;
+        public static final int last_night_controls=0x7f09000a;
+        public static final int section_label=0x7f090012;
+        public static final int test_blackout=0x7f09000e;
+        public static final int thingy=0x7f090001;
     }
     public static final class layout {
-        public static final int activity_activity_detail=0x7f030000;
-        /** 
-    Layout alias to replace the single-pane version of the layout with a
-    two-pane version on Large screens.
-
-    For more on layout aliases, see:
-    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
-    
-
-    Layout alias to replace the single-pane version of the layout with a
-    two-pane version on Large screens.
-
-    For more on layout aliases, see:
-    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
-    
-         */
-        public static final int activity_activity_list=0x7f030001;
-        public static final int activity_activity_twopane=0x7f030002;
-        public static final int activity_blackout_app=0x7f030003;
+        public static final int activity_activity_test3=0x7f030000;
+        public static final int activity_blacked_out=0x7f030001;
+        public static final int activity_blackout_app=0x7f030002;
+        public static final int activity_dialog_launcher=0x7f030003;
         public static final int activity_get_drunk=0x7f030004;
         public static final int activity_test_blackout=0x7f030005;
-        public static final int article_view=0x7f030006;
-        public static final int fragment_activity_detail=0x7f030007;
+        public static final int activity_testing=0x7f030006;
+        public static final int activity_things_you_did=0x7f030007;
+        public static final int activity_what_you_did=0x7f030008;
+        public static final int fragment_activity_detail=0x7f030009;
+        public static final int fragment_testing_dummy=0x7f03000a;
+        public static final int fragment_things_you_did_dummy=0x7f03000b;
     }
     public static final class menu {
-        public static final int test_blackout=0x7f080000;
+        public static final int activity_test3=0x7f080000;
+        public static final int test_blackout=0x7f080001;
+        public static final int testing=0x7f080002;
+        public static final int things_you_did=0x7f080003;
+        public static final int what_you_did=0x7f080004;
     }
     public static final class string {
         public static final int action_settings=0x7f06000c;
         public static final int app_name=0x7f060000;
         public static final int blackout_test=0x7f06000d;
         public static final int done_drinking=0x7f060005;
+        public static final int dummy_button=0x7f06000f;
+        public static final int dummy_content=0x7f060010;
         public static final int get_drunk_button=0x7f060002;
+        public static final int go_home_temp=0x7f060015;
+        public static final int hello_world=0x7f060012;
         public static final int last_night_review=0x7f060003;
         public static final int summary_str=0x7f060001;
+        public static final int title_activity_activity_test3=0x7f060011;
+        public static final int title_activity_blacked_out=0x7f060013;
         public static final int title_activity_detail=0x7f06000a;
+        public static final int title_activity_dialog_launcher=0x7f06000e;
         public static final int title_activity_get_drunk=0x7f060004;
         public static final int title_activity_list=0x7f060009;
         public static final int title_activity_test_blackout=0x7f06000b;
+        public static final int title_activity_testing=0x7f06001b;
+        public static final int title_activity_things_you_did=0x7f060017;
+        public static final int title_activity_what_you_did=0x7f060016;
+        public static final int title_section1=0x7f060018;
+        public static final int title_section2=0x7f060019;
+        public static final int title_section3=0x7f06001a;
         public static final int title_thing_detail=0x7f060008;
         public static final int title_thing_list=0x7f060007;
         public static final int welcome_message=0x7f060006;
+        public static final int well_here=0x7f06001c;
+        public static final int you_blacked_out=0x7f060014;
     }
     public static final class style {
         /** 

@@ -18,6 +18,7 @@ import com.example.blackoutapp.util.SystemUiHider;
  * 
  * @see SystemUiHider
  */
+@SuppressLint("InlinedApi")
 public class GetDrunkActivity extends Activity {
 	/**
 	 * An example full-screen activity that shows and hides the system UI (i.e.
@@ -26,7 +27,8 @@ public class GetDrunkActivity extends Activity {
 	 * @see SystemUiHider
 	 */
 	final int INITIAL_HIDE_DELAY = 1;
-
+	protected int out;
+	
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +67,7 @@ public class GetDrunkActivity extends Activity {
 				return clickDetector.onTouchEvent(event);
 			}
 		});
+    	
     	hideSystemUI();
     	//Pending? Intent intent = new Intent(this, Test_blackout.class);
     	
@@ -85,7 +88,6 @@ public class GetDrunkActivity extends Activity {
 				| View.SYSTEM_UI_FLAG_IMMERSIVE);
 	}
 	// Show UI just uses layout flags.
-	
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
 		
@@ -120,4 +122,6 @@ public class GetDrunkActivity extends Activity {
     	Intent intent = new Intent(this, BlackoutAppActivity.class);
     	startActivity(intent);
     }
+    
+    
 }

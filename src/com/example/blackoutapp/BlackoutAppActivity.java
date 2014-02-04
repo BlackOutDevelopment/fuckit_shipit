@@ -9,7 +9,6 @@ import android.os.Message;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.TextView;
 
 import com.example.blackoutapp.util.SystemUiHider;
 
@@ -113,12 +112,12 @@ public class BlackoutAppActivity extends Activity {
 	}
 	
     public void get_drunk(View view) {
-    	Intent intent = new Intent(this, GetDrunkActivity.class);
+    	Intent intent = new Intent(this, ActivityTest3.class);
     	startActivity(intent);
     }
     
     public void last_night_review(View view) {
-    	Intent intent = new Intent(this, ActivityListActivity.class);
+    	Intent intent = new Intent(this, ThingsYouDid.class);
     	startActivity(intent);
     }
 }

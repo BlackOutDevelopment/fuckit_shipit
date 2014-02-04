@@ -8,11 +8,19 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="19" />
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <service android:name="com.example.blackoutapp.MyService" >
+        </service>
+
         <activity
             android:name="com.example.blackoutapp.BlackoutAppActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -24,6 +32,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name="com.example.blackoutapp.Alarm"
+            android:process=":remote" >
+        </receiver>
+
         <activity
             android:name="com.example.blackoutapp.GetDrunkActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -49,6 +63,46 @@
         <activity
             android:name="com.example.blackoutapp.Test_blackout"
             android:label="@string/title_activity_test_blackout" >
+        </activity>
+        <activity
+            android:name="com.example.blackoutapp.DialogLauncherA"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_dialog_launcher"
+            android:parentActivityName="com.example.blackoutapp.GetDrunkActivity"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.blackoutapp.GetDrunkActivity" />
+        </activity>
+        <activity
+            android:name="com.example.blackoutapp.ActivityTest3"
+            android:label="@string/title_activity_activity_test3"
+            android:parentActivityName="com.example.blackoutapp.GetDrunkActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.blackoutapp.GetDrunkActivity" />
+        </activity>
+        <activity
+            android:name="com.example.blackoutapp.Blacked_out"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_blacked_out"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name="com.example.blackoutapp.WhatYouDid"
+            android:label="@string/title_activity_what_you_did" >
+        </activity>
+        <activity
+            android:name="com.example.blackoutapp.ThingsYouDid"
+            android:label="@string/title_activity_things_you_did"
+            android:parentActivityName="com.example.blackoutapp.BlackoutAppActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.blackoutapp.BlackoutAppActivity" />
+        </activity>
+        <activity
+            android:name="com.example.blackoutapp.Testing"
+            android:label="@string/title_activity_testing" >
         </activity>
     </application>
 
